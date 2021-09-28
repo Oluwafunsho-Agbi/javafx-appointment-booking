@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="1269.0" style="-fx-background-color: aliceblue;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c195.View_Controller.AppointmentsMainController">
+    <children>
+        <Label fx:id="AppointmentScreenLabel" layoutX="525.0" layoutY="14.0" text="Appointments">
+            <font>
+                <Font name="System Bold Italic" size="32.0" />
+            </font>
+        </Label>
+        <ButtonBar layoutX="130.0" layoutY="594.0" prefHeight="40.0" prefWidth="640.0">
+            <buttons>
+                <Button fx:id="EditAppointmentButton" mnemonicParsing="false" onAction="#AddNewAppointmentButtonHandler" prefHeight="26.0" prefWidth="240.0" text="Edit Appointment" />
+            </buttons>
+        </ButtonBar>
+        <TableView fx:id="AppointmentTableView" layoutX="85.0" layoutY="109.0" prefHeight="468.0" prefWidth="1091.0">
+            <columns>
+                <TableColumn fx:id="AppointmentStartColumn" prefWidth="197.59996795654297" text="Start" />
+                <TableColumn fx:id="AppointmentEndColumn" prefWidth="168.0" text="End" />
+                <TableColumn fx:id="AppointmentTitleColumn" prefWidth="185.60012817382812" text="Title" />
+                <TableColumn fx:id="AppointmentTypeColumn" prefWidth="120.7999267578125" text="Type" />
+                <TableColumn fx:id="AppointmentCustomerColumn" prefWidth="204.0" text="Customer" />
+                <TableColumn fx:id="AppointmentConsultantColumn" prefWidth="215.2000732421875" text="Consultant" />
+            </columns>
+        </TableView>
+        <RadioButton fx:id="AppointmentWeekRadioButton" layoutX="85.0" layoutY="38.0" mnemonicParsing="false" onAction="#AppointmentWeekRadioButtonHandler" text="Current Week">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="AppointmentMonthRadioButton" layoutX="85.0" layoutY="69.0" mnemonicParsing="false" onAction="#AppointmentMonthRadioButtonHandler" text="Current Month">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </RadioButton>
+    </children>
+</AnchorPane>
