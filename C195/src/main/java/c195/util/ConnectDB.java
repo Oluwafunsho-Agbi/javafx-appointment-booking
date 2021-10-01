@@ -11,7 +11,7 @@ import java.sql.SQLException;
  */
 public class ConnectDB {
     private static final String databaseName = "agbi";
-    private static final String DB_URL = "jdbc:mysql://0.tcp.ngrok.io:12021/" + databaseName;
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/" + databaseName;
     private static final String username = "agbi";
     private static final String password = "agbi";
     private static final String driver = "com.mysql.jdbc.Driver";
